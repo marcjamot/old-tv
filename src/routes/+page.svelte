@@ -22,6 +22,7 @@
 
   onMount(async () => {
     video.play(VIDEOS[i].url);
+    document.body.requestPointerLock();
   });
 
   function onKeydown(e: KeyboardEvent) {
